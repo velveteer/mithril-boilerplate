@@ -1,0 +1,22 @@
+{
+  "name": "mithril-boilerplate",
+  "description": "A quick setup for Mithril projects.",
+  "repository": "https://github.com/velveteer/mithril-boilerplate",
+  "devDependencies": {
+    "connect-history-api-fallback": "0.0.4",
+    "event-stream": "~3.1.5",
+    "gulp": "~3.6.2",
+    "gulp-clean": "~0.2.4",
+    "gulp-concat": "~2.2.0",
+    "gulp-connect": "^1.1.1",
+    "gulp-csso": "~0.2.8",
+    "gulp-jshint": "^1.5.6",
+    "gulp-less": "~1.2.3",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-util": "~2.2.14",
+    "jshint-stylish": "~0.2.0",
+    "proxy-middleware": "^0.5.0"
+  }
+}
