@@ -11,4 +11,4 @@ Features include:
 + LESS support (easily swapped with your preproc of choice)
 + LiveReload
 + Proxy middleware for localhost API
-+ Connect fallback to browser history API (for hash routes)
++ Connect fallback to browser history API (for pathname routes)
