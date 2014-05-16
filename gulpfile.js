@@ -27,7 +27,7 @@ gulp.task('scripts', function() {
             .pipe(plugins.jshint('.jshintrc'))
             .pipe(plugins.jshint.reporter(require('jshint-stylish'))),
 
-        // Concatenate, minify and copy all JavaScript (except vendor scripts)
+        // Concatenate, minify and copy JavaScript
         gulp.src(['./src/js/**/*.js'])
             .pipe(plugins.concat('app.js'))
             .pipe(plugins.uglify())
@@ -36,7 +36,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('vendorJS', function(){
-    //concatenate vendor JS files
+    // Concatenate vendor JS files
     gulp.src(['!./bower_components/**/*.min.js',
         './bower_components/**/*.js'])
         .pipe(plugins.concat('vendor.js'))
@@ -53,7 +53,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('vendorCSS', function(){
-    //concatenate vendor CSS files
+    // Concatenate vendor CSS files
     gulp.src(['!./bower_components/**/*.min.css',
         './bower_components/**/*.css'])
         .pipe(plugins.concat('vendor.css'))
