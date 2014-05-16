@@ -12,3 +12,21 @@ Features include:
 + LiveReload
 + Proxy middleware for localhost API
 + Connect fallback to browser history API (for pathname routes)
+
+### Requirements
+
++ NodeJS
++ NPM
++ Bower
+
+### Install and use
+
+`git clone https://github.com/velveteer/mithril-boilerplate`
+
+`npm install`
+
+`bower install`
+
+`gulp`
+
+Now you should see the example Mithril app at [http://localhost:9000](http://localhost:9000)
