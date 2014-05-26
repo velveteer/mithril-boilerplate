@@ -40,7 +40,7 @@ gulp.task('scripts', function() {
         // Concatenate, minify and copy all JavaScript (except vendor scripts)
         gulp.src(['!./src/scripts/vendor/**/*.js', './src/scripts/**/*.js'])
             .pipe(plugins.concat('app.js'))
-//            .pipe(plugins.uglify())
+            .pipe(plugins.uglify())
             .pipe(gulp.dest('./dist/scripts'))
     );
 });
@@ -94,7 +94,6 @@ gulp.task('watch',function(){
     });
     gulp.watch('./src/**/*.js',['scripts']);
     gulp.watch('./src/**/*.less',['styles']);
-    gulp.watch('./src/img/**/*',['copy-images']);
     gulp.watch('./src/index.html',['copy-index']);
 
 });
