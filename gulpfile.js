@@ -85,9 +85,9 @@ gulp.task('connect', plugins.connect.server({
 
 gulp.task('watch',function(){
     gulp.watch([
-        'src/**/*.html',
-        'src/**/*.js',
-        'src/**/*.less'
+        './src/**/*.html',
+        './src/**/*.js',
+        './src/**/*.less'
     ], function(event) {
         return gulp.src(event.path)
             .pipe(plugins.connect.reload());
