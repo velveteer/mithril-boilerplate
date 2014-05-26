@@ -1,6 +1,6 @@
 ## Mithril Boilerplate
 
-This is a quick starter template for projects that want to use Leo Horie's
+This is a quick starter template coupled with NodeJS build tools for projects that want to use Leo Horie's
 [Mithril](http://lhorie.github.io/mithril/index.html) framework.
 
 Features include:
@@ -20,8 +20,6 @@ Features include:
 + Bower
 
 ### Install and use
-
-`git clone https://github.com/velveteer/mithril-boilerplate`
 
 `npm install`
 
