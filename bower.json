@@ -15,6 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "mithril": "~0.1.13"
+    "mithril": "~0.1.14"
   }
 }
