@@ -7,7 +7,6 @@ Features include:
 
 + Gulpfile included
 + Bower support
-+ Basic MVC example with centralized data
 + LESS support (easily swapped with your preproc of choice)
 + LiveReload
 + Proxy middleware for localhost API
