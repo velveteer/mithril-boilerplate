@@ -7,6 +7,7 @@ Features include:
 
 + Gulpfile included
 + Bower support
++ Browserify
 + LESS support (easily swapped with your preproc of choice)
 + LiveReload
 + Proxy middleware for localhost API
@@ -21,8 +22,6 @@ Features include:
 ### Install and use
 
 `npm install`
-
-`bower install`
 
 `gulp`
 

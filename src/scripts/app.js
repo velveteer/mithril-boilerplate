@@ -1,3 +1,5 @@
+m = require('mithril');
+
 //this application only has one module: todo
 var todo = {};
 
