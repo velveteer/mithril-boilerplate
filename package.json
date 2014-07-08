@@ -17,7 +17,7 @@
     "gulp-rename": "~1.2.0",
     "gulp-util": "~2.2.14",
     "jshint-stylish": "~0.2.0",
-    "mithril": "^0.1.17",
+    "mithril": "^0.1.18",
     "proxy-middleware": "^0.5.0"
   }
 }
