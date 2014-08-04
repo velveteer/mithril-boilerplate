@@ -6,9 +6,9 @@ var gulp = require('gulp');
 // inject bower components into index.html
 gulp.task('wiredep', function() {
     var wiredep = require('wiredep').stream;
-    gulp.src('./app/index.html')
+    gulp.src('./src/index.html')
         .pipe(wiredep({
-            directory: './app/bower_components'
+            directory: './bower_components'
         }))
-        .pipe(gulp.dest('./app'));
+        .pipe(gulp.dest('./src'));
 });
