@@ -42,10 +42,9 @@ gulp.task('setWatch', function() {
 });
 
 // Watch for changes
-gulp.task('watch', ['connect', 'serve'], function () {
+gulp.task('watch', ['serve'], function () {
     gulp.watch(['./src/scripts/**/*.js', './src/index.html'], ['browserify']);
     gulp.watch(['./src/styles/**/*.less'], ['styles']);
-    gulp.watch('src/images/**/*', ['images']);
     gulp.watch('bower.json', ['wiredep']);
     gulp.watch('./.tmp/**').on('change', refresh.changed);
 });
