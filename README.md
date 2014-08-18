@@ -10,8 +10,8 @@ Features include:
 + Browserify for CommonJS modules (Mithril is installed from NPM)
 + JSHint and JSCS linting
 + LESS support (easily swapped with your preproc of choice)
-+ LiveReload
-+ Proxy middleware for localhost API and mocks using [connect-prism](https://github.com/seglo/connect-prism)
++ Connect server with LiveReload
++ Proxy middleware for local/external API calls and mocks using [connect-prism](https://github.com/seglo/connect-prism)
 + Connect middleware for HTML5 pushState fallback (for pathname routes)
 
 ### Requirements

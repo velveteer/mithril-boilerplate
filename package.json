@@ -29,7 +29,7 @@
     "gulp-useref": "^0.5.0",
     "gulp-util": "~2.2.14",
     "jshint-stylish": "~0.2.0",
-    "mithril": "^0.1.19",
+    "mithril": "latest",
     "pretty-hrtime": "^0.2.1",
     "vinyl-source-stream": "^0.1.1",
     "watchify": "^0.10.2",
