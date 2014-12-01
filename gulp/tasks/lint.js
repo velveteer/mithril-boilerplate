@@ -9,6 +9,6 @@ gulp.task('lint', function () {
     return gulp.src(['./src/scripts/**/*.js'])
         .pipe(plumber())
         .pipe(jscs())
-        .pipe(jshint('.jshintrc', {fail: true}))
+        .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter(stylish)); // Console output
 });

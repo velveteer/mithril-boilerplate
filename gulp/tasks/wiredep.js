@@ -4,7 +4,7 @@ var gulp = require('gulp');
 // in the index.html sections marked by <!-- bower -->
 
 // inject bower components into index.html
-gulp.task('wiredep', function() {
+gulp.task('wiredep', function () {
     var wiredep = require('wiredep').stream;
     gulp.src('./src/index.html')
         .pipe(wiredep({

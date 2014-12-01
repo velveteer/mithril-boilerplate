@@ -3,7 +3,7 @@
   "description": "A quick setup for Mithril projects.",
   "repository": "https://github.com/velveteer/mithril-boilerplate",
   "devDependencies": {
-    "browserify": "^3.33.1",
+    "browserify": "^6.3.3",
     "connect": "^2.14.4",
     "connect-history-api-fallback": "0.0.4",
     "connect-livereload": "^0.4.0",
@@ -11,7 +11,6 @@
     "grunt": "^0.4.5",
     "gulp": "^3.8.7",
     "gulp-cache": "^0.2.0",
-    "gulp-clean": "~0.2.4",
     "gulp-concat": "~2.2.0",
     "gulp-csso": "~0.2.8",
     "gulp-filter": "^1.0.0",
@@ -31,8 +30,9 @@
     "jshint-stylish": "~0.2.0",
     "mithril": "latest",
     "pretty-hrtime": "^0.2.1",
+    "require-dir": "^0.1.0",
     "vinyl-source-stream": "^0.1.1",
-    "watchify": "^0.10.2",
+    "watchify": "^2.0.0",
     "wiredep": "^1.8.2"
   }
 }
