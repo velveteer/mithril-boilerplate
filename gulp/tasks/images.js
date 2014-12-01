@@ -1,15 +1,11 @@
-var gulp = require('gulp');
-var cache = require('gulp-cache');
-var imagemin = require('gulp-imagemin');
-
-// Reference for optimization levels: https://github.com/gruntjs/grunt-contrib-imagemin#optimizationlevel-png
+var changed    = require('gulp-changed');
+var gulp       = require('gulp');
+var imagemin   = require('gulp-imagemin');
+var config     = require('../config').images;
 
 gulp.task('images', function () {
-    return gulp.src('src/images/**/*')
-        .pipe(cache(imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            interlaced: true
-        })))
-        .pipe(gulp.dest('./dist/images'));
+  return gulp.src(config.src)
+    .pipe(changed(config.dest)) // Ignore unchanged files
+    .pipe(imagemin()) // Optimize
+    .pipe(gulp.dest(config.dest));
 });

@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var livereload = require('gulp-livereload');
 
 // Watch for changes
-gulp.task('watch', ['setWatch', 'serve'], function (next) {
+gulp.task('watch', ['setWatch', 'serve'], function () {
     livereload.listen();
 
     gulp.watch('./src/styles/**/*.less', ['styles']);

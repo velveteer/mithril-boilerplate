@@ -10,5 +10,9 @@ module.exports = {
       dest: dest,
       outputName: 'app.js'
     }]
+  },
+  images: {
+    src: src + "/images/**",
+    dest: "./dist/images"
   }
 };
