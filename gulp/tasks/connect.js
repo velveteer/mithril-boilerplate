@@ -10,12 +10,12 @@ gulp.task('connect', function (next) {
     var server = connect();
 
     // Prism proxies
-    //server.use(prism.middleware); // todo: prism is not working. Also check prism.js and serve.js.
+    //server.use(prism.middleware);
     // Start Prism
     //prismInit();
 
     // HTML5 pushState fallback (useful for pathname routes)
-    server.use(historyApiFallback);
+    server.use(historyApiFallback());
 
     // Routes
     server.use(serveStatic('./src'));
