@@ -1,25 +1,34 @@
 var gulp = require('gulp');
 var connect = require('connect');
+var serveStatic = require('serve-static');
 var historyApiFallback = require('connect-history-api-fallback');
-var prism = require('connect-prism');
-var prismInit = require('../util/prism');
+//var prism = require('connect-prism');
+//var prismInit = require('../util/prism');
 
 gulp.task('connect', function (next) {
+
     var server = connect();
 
     // Prism proxies
-    server.use(prism.middleware);
+    //server.use(prism.middleware); // todo: prism is not working. Also check prism.js and serve.js.
     // Start Prism
-    prismInit();
+    //prismInit();
 
     // HTML5 pushState fallback (useful for pathname routes)
     server.use(historyApiFallback);
 
     // Routes
-    server.use(connect.static('./src'));
-    server.use(connect.static('./.tmp'));
+    server.use(serveStatic('./src'));
+    server.use(serveStatic('./.tmp'));
 
     // Start connect
-    server.listen(9000, next)
+    server.listen(9000, function() {
+        console.log("Listening on http://localhost:9000/");
+        next();
+    });
+
+
+    //http.createServer(server).listen(3000, next);
+
 });
 

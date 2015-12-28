@@ -4,3 +4,4 @@ bower_components
 .tmp
 mocks
 .idea
+npm-debug.log

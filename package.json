@@ -33,6 +33,7 @@
     "mithril": "latest",
     "pretty-hrtime": "^1.0.1",
     "require-dir": "^0.3.0",
+    "serve-static": "^1.10.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1",
     "wiredep": "^3.0.0"
