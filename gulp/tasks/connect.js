@@ -1,10 +1,12 @@
 var gulp = require('gulp');
 var connect = require('connect');
+var serveStatic = require('serve-static');
 var historyApiFallback = require('connect-history-api-fallback');
 var prism = require('connect-prism');
 var prismInit = require('../util/prism');
 
 gulp.task('connect', function (next) {
+
     var server = connect();
 
     // Prism proxies
@@ -13,13 +15,17 @@ gulp.task('connect', function (next) {
     prismInit();
 
     // HTML5 pushState fallback (useful for pathname routes)
-    server.use(historyApiFallback);
+    server.use(historyApiFallback());
 
     // Routes
-    server.use(connect.static('./src'));
-    server.use(connect.static('./.tmp'));
+    server.use(serveStatic('./src'));
+    server.use(serveStatic('./.tmp'));
 
     // Start connect
-    server.listen(9000, next)
+    server.listen(9000, function() {
+        console.log("Listening on http://localhost:9000/");
+        next();
+    });
+
 });
 

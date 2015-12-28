@@ -6,14 +6,11 @@ var csso = require('gulp-csso');
 var plumber = require('gulp-plumber');
 
 gulp.task('build', ['browserify', 'styles', 'images'], function() {
-    var assets = useref.assets({ searchPath: ['./.tmp', './src'] });
-
     return gulp.src('./src/index.html')
         .pipe(plumber())
-        .pipe(assets)
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', csso()))
-        .pipe(assets.restore())
+        .pipe(useref({ searchPath: ['./.tmp', './src'] }))
         .pipe(useref())
         .pipe(gulp.dest('./dist'));
 });
